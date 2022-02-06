@@ -1,0 +1,226 @@
+/* RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*NAV Menu --clase extra para estilo del Nav de Bootstrap*/
+.header-boot {
+  background: #0d1821;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.85;
+  padding-bottom: 0.8rem;
+}
+.header-boot img {
+  width: 80px;
+}
+.header-boot li {
+  padding: 0.4em 1em;
+}
+.header-boot li:hover {
+  text-shadow: 1px 0px 2px #35ce8d;
+}
+
+@media only screen and (max-width: 480px) {
+  .header-boot {
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
+  }
+  .header-boot img {
+    width: 60px;
+  }
+}
+
+/* Titulos y parrafos del sitio */
+.titulo-parrafo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+.titulo-parrafo__margen {
+  margin-top: 5rem;
+}
+
+.titulo-parrafo h1,
+.titulo-parrafo h2,
+.titulo-parrafo h3 {
+  padding: 0.1rem 0.5rem;
+  color: #35ce8d;
+  background-color: #0d1821;
+  box-shadow: 7px 7px #826251;
+}
+.titulo-parrafo p {
+  font-size: 1.4rem;
+  color: #68c3d4;
+  font-weight: 600;
+  padding-top: 0.7rem;
+  width: 30%;
+}
+.titulo-parrafo ul {
+  text-align: start;
+  font-weight: 600;
+  padding-top: 0.7rem;
+  width: 80%; }
+
+/* Tarjetas de presentación Sitio*/
+.home-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 2rem;
+  padding: 1rem 1rem;
+}
+.home-flex__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+.home-tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 450px;
+  border-radius: 5px;
+  border-end-start-radius: 50px;
+  border-start-end-radius: 50px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #0d1821;
+}
+.home-tarjeta h2,
+.home-tarjeta p {
+  color: #e9c31d;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  font-weight: 700;
+  width: 100%;
+}
+.home-tarjeta ul {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: -10px;
+}
+.home-tarjeta__1 {
+  background-image: url(../multimedia/home-carpinchos.jpg);
+}
+.home-tarjeta__2 {
+  background-image: url(../multimedia/home-yacare.jpg);
+}
+.home-tarjeta__3 {
+  background-image: url(../multimedia/actividades-kayak.jpg);
+}
+
+.tarjeta-texto {
+  background-color: rgba(13, 24, 33, 0.5);
+  padding: 1rem 1rem 0rem 1rem;
+  border-start-end-radius: 50px;
+  border-right: 2px solid #0d1821;
+  width: 90%;
+  height: 40%;
+}
+
+/* Texto importante en rojo*/
+.destacar {
+  font-weight: 700;
+  color: #e91616;
+}
+
+/*Tarjeta de clientes, ---- SECCION OPINIONES ---- */
+.clientes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clientes-container .clientes-tarjeta {
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px #0d1821;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+.clientes-container .clientes-tarjeta img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.clientes-container .clientes-tarjeta__titulo {
+  color: #68c3d4;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.clientes-container p {
+  width: 240px;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/*  MEDIA QUERYS -- //tablets //celulares */
+@media only screen and (max-width: 1350px) {
+  .titulo-parrafo h1, .titulo-parrafo h2 {
+    font-size: 1.5rem;
+    padding: 0.1rem 0.5rem; }
+  .titulo-parrafo p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0rem 0rem;
+    width: 100%; }
+  .barra-separadora {
+    display: none; }
+  .home-flex {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-items: center; }
+  .home-tarjeta {
+    width: 600px; } }
+
+@media only screen and (max-width: 650px) {
+  .home-tarjeta {
+    width: 360px; } }
+
+@media only screen and (max-width: 480px) {
+  .home-tarjeta {
+    width: 320px; }
+    .home-tarjeta h2, .home-tarjeta p {
+      color: #E9C31D;
+      font-size: 1.1rem;
+      margin-bottom: 2px;
+      font-weight: 700;
+      width: 100%; }
+    .home-tarjeta ul {
+      color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-left: -10px; }
+  .titulo-parrafo ul {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.7rem;
+    width: 80%; } }
